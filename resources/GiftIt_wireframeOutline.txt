@@ -1,0 +1,35 @@
+Name: Kai Neuhold-Huber
+Project Title: GiftIt
+Project Stack: MERN
+GitHub Repo Link: https://github.com/KainH13/giftIt
+
+Project Description: The top level goal is to make an app that lets users save and organize gift ideas for their friends. I want to include a home page where users can save gift idea cards for friends/family by name and have conversations with anyone that's visited their profile. I also want the user to be able to edit/add information to their own profile and search for the profiles of other users. Once on another user's page the signed in user can leave and like comments and view any details they've added to their profile for additional context on what kinds of gifts they might enjoy!
+
+New Programming Concept(s) I'm Planning to Learn: 
+- User authentication in MERN
+- Relational Collections in Mongoose/MongoDB (User, cards, comments, likes)
+- Socket.io - so that all users can see others reactions and comments in real time
+
+Week 1 Features (to show at Review during Week 2)
+- Sign up for a group (https://docs.google.com/spreadsheets/d/1x9PRE-xviP4N-jjPWlFNkNycPIzgeYyQKphdLFeaxGs/edit#gid=0)
+- Schedule a Review during Week 2 (https://calendly.com/zpieper/solo-project-sprint)
+- Create GitHub repo for project
+- Create a .gitignore file for my project for my GitHub repo (enter in React, Python, or Java at https://www.toptal.com/developers/gitignore)
+- Finish this completed txt file and create project wireframe using Balsamiq (https://balsamiq.com/wireframes/) [Drawings and other wireframe programs also accepted!]
+- Email Zack this completed txt file, and project wireframe for approval
+- Submit completed wireframe on platform (https://login.codingdojo.com/m/97/6237/44911)
+- Complete Arrays To Do 1 & Arrays To Do 2 assignments
+- 
+
+
+Week 2 Features (to show at first office hour/lecture of Week 3)
+- Schedule my time for my presentation (https://docs.google.com/spreadsheets/d/1x9PRE-xviP4N-jjPWlFNkNycPIzgeYyQKphdLFeaxGs/edit#gid=414986054)
+- Begin to talk with group about project ideas and what skills I bring to the table
+- Complete Singly Linked Lists Fronts & Display assignments
+- ***Finish CSS work (could be Bootstrap or another framework too instead of CSS)***
+- 
+
+
+Product Backlog (If I have more time after completing my MVP, I'll start to work on...)
+- Adding connections between users, so that a users profile is private until they accept a connection from another user
+- Adding search for fields other than First Name
