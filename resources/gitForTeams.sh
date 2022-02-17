@@ -22,5 +22,8 @@ git push origin [branchName]
 
 # Once approved, merge pull request in review UI on GitHub
 
-# switching back to main branch to restart the process
+# switching back to main, or other, branch to restart the process
 git checkout main
+
+# Merging from one branch to another locally
+git merge main # merges main changes into the currently active branch
