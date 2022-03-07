@@ -38,6 +38,27 @@ class BST {
       }
     }
   }
+
+  min() {
+    if (this.root == null) {
+      return "Tree is empty";
+    }
+
+    let runner = this.root;
+    while (runner.left != null) {
+      runner = runner.left;
+    }
+
+    return runner.val;
+  }
+
+  size(current_node) {
+    if (current_node == null) {
+      return 0;
+    } else {
+      return this.size(current_node.left) + 1 + this.size(current_node.right);
+    }
+  }
 }
 
 let bst1 = new BST();
