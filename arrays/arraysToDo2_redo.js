@@ -49,13 +49,15 @@ console.log(rotate(arr1, 1));
 arr1 = [1, 2, 3];
 console.log(rotate(arr1, -1));
 
-function rotateV2(arr, shift) { // say we have a test shift of 1 and -1
+function rotateV2(arr, shift) {
+  // say we have a test shift of 1 and -1
   reverseHelper(arr); // reverse array to start eg: [1,2,3] -> [3,2,1]
   let moves = shift % arr.length;
   if (moves > 0) {
     reverseHelper(arr, 0, moves - 1); // reverse first portion [3,2,1]
     reverseHelper(arr, moves, arr.length - 1); // reverse last portion [3,1,2]
-  } else { // somethings wrong here -- but moving on for now
+  } else {
+    // somethings wrong here -- but moving on for now
     reverseHelper(arr, 0, arr.length - moves); // reverse first portion [2,3,1]
   }
   return arr;
@@ -75,3 +77,38 @@ arr1 = [1, 2, 3];
 console.log(rotateV2(arr1, 1));
 arr1 = [1, 2, 3];
 console.log(rotateV2(arr1, -1));
+
+function filterRange(arr, min, max) {
+  let nextIdx = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > min && arr[i] < max) {
+      arr[nextIdx] = arr[i];
+      nextIdx++;
+    }
+  }
+  arr.length = nextIdx;
+  return arr;
+}
+
+arr1 = [1, 2, 3, 4, 5, 6];
+console.log(filterRange(arr1, 1, 5));
+
+function concatArr(arr1, arr2) {
+  let output = [];
+  nextIdx = 0;
+  // could remove redundancy by putting array building in a helper function
+  for (let i = 0; i < arr1.length; i++) {
+    output[nextIdx] = arr1[i];
+    nextIdx++;
+  }
+  for (let i = 0; i < arr2.length; i++) {
+    output[nextIdx] = arr2[i];
+    nextIdx++;
+  }
+  return output;
+}
+
+arr1 = [1, 2, 3];
+arr2 = [4, 5, 6];
+console.log(concatArr(arr1, arr2));
