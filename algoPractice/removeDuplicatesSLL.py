@@ -1,8 +1,5 @@
 #!/usr/local/bin/python3.9
 
-# This is an input class. Do not edit.
-from os import link
-
 
 class LinkedList:
     def __init__(self, value):
