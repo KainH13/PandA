@@ -1,6 +1,7 @@
 #!/usr/local/bin/python3.9
 
 
+# O(n) time | O(1) space
 def findThreeLargestNumbers(array):
     # set up storage of 3 largest values
     threeLargest = [None, None, None]
