@@ -19,17 +19,18 @@ print(maxProfit([7,6,4,3,1]))
 
 # O(n) time | O(1) space
 def maxProfitV2(prices):
-    left = 0 # Buy
-    right = 1 # Sell
-    max_profit = 0
+    profit = 0
+    left = 0
+    right = 1
     while right < len(prices):
         if prices[left] < prices[right]:
-            currentProfit = prices[right] - prices[left] #our current Profit
-            max_profit = max(currentProfit,max_profit)
+            diff = prices[right] - prices[left]
+            if diff > profit:
+                profit = diff
         else:
             left = right
         right += 1
-    return max_profit
+    return profit
 
 
 print(maxProfitV2([7,1,5,3,6,4]))
